@@ -33,15 +33,11 @@ public class Calculate {
     return sum;
   }
 
-  public double average(int... numbers) {
-    if (numbers.length == 0) {
-      return 0.0;
-    }
-    int sum = 0;
-    for (int number : numbers) {
-      sum += number;
-    }
-    return (double) sum / numbers.length;
+  public double average(int x, int y) {
+    double sum;
+    sum = x + y;
+    double avg = sum / 2;
+    return avg;
   }
 
   public double averageRange(int start, int end) {
